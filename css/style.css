@@ -1,0 +1,24 @@
+h1{
+    font-size: 40px;
+}
+
+
+.wrapper{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+#textDecrypt,
+#textEncrypt{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
+
+input[type="button"]{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(186, 209, 186);
+}
+
