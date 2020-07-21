@@ -47,12 +47,6 @@ var toEncrypt = (string, plainAlphabet, encryptedAlphabet) =>{
 
 // toEncript(string, plainAlphabet, encryptedAlphabet);
 
-var toDecrypt = (string, plainAlphabet, encryptedAlphabet) =>{
-    for(str of string){
-        result += plainAlphabet[encryptedAlphabet.indexOf(str.toLowerCase())];
-    }
-    return result;
-}
 
 // toPlain(string, plainAlphabet, encryptedAlphabet)
 
@@ -70,7 +64,7 @@ function encrypt(){
 
 function decrypt(){
     var input = document.getElementById('textDecrypt').value;
-    var encrypt = toDecrypt(input, plainAlphabet, encryptedAlphabet);
+    var encrypt = toEncrypt(input, encryptedAlphabet, plainAlphabet);
     return document.getElementById('textEncrypt').innerHTML = encrypt;
 }
 
